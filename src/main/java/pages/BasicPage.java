@@ -15,7 +15,22 @@ public class BasicPage {
         $(By.xpath("//span[text()='"+ text +"']/..")).click();
     }
 
+    public void clickButtonLi(String text){
+        $(By.xpath("//li[contains(text(),'"+ text +"')]")).click();
+    }
+
+    public void clickDivSpan(String text){
+        $(By.xpath("//span[contains(text(),'"+ text +"')]")).click();
+    }
     public void contentIsVisible(String text) {
-        $(By.xpath("//div[text()='"+ text +"']")).shouldBe(Condition.visible);
+        $(By.xpath("//*[contains(text(),'"+text+"')]")).shouldBe(Condition.visible);
+    }
+
+    public void contentInInputIsVisible(String text) {
+        $(By.xpath("//input[@value='"+ text +"')]")).shouldBe(Condition.visible);
+    }
+
+    public void clickSpan(String text) {
+        $(By.xpath("//span[contains(text(),'"+ text +"')]")).click();
     }
 }
