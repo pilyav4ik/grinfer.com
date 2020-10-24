@@ -2,7 +2,7 @@ package steps;
 
 
 import config.EnvironmentConfig;
-import io.cucumber.java.en.Then;
+import cucumber.api.java.en.Then;
 import pages.BasicPage;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -44,6 +44,6 @@ public class BasicPageDef {
 
     @Then("Click {string} div span")
     public void clickDivSpan(String arg0) {
-            basicPage.clickSpan(arg0);
+            basicPage.clickDivSpan(arg0);
     }
 }
