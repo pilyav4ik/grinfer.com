@@ -1,6 +1,6 @@
 Feature: Login User
 
-  Scenario: Login user
+  Scenario: Login user by UI
     Then Click "Log In" button
     Then Input email
     Then Input password

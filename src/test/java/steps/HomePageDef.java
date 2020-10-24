@@ -1,7 +1,7 @@
 package steps;
 
 import cucumber.api.java.en.Then;
-import pages.HomePage;
+import model.ui.HomePage;
 
 public class HomePageDef {
 

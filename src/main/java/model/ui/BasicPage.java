@@ -1,4 +1,4 @@
-package pages;
+package model.ui;
 
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;

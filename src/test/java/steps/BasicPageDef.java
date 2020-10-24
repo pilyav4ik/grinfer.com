@@ -3,7 +3,7 @@ package steps;
 
 import config.EnvironmentConfig;
 import cucumber.api.java.en.Then;
-import pages.BasicPage;
+import model.ui.BasicPage;
 
 import static com.codeborne.selenide.Selenide.open;
 
