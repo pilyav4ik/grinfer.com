@@ -2,13 +2,14 @@ package steps;
 
 import config.UserConfig;
 import cucumber.api.java.en.Then;
+import model.ui.SignInPage;
 import org.junit.Assert;
-import pages.SignInPage;
+import service.AuthService;
 
 public class SignInPageDef {
 
     private SignInPage signInPage = new SignInPage();
-
+    AuthService authService = new AuthService();
 
     @Then("Input email")
     public void inputEmail(){

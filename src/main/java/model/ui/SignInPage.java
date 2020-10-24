@@ -1,4 +1,4 @@
-package pages;
+package model.ui;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
@@ -9,8 +9,8 @@ public class SignInPage {
 
     private SelenideElement emailInput = $(By.xpath("//input[@id='email']"));
     private SelenideElement passwordInput = $(By.xpath("//input[@id='password']"));
-    private SelenideElement firstName = $(By.xpath("//input[@id='form_firstName']"));
-    private SelenideElement lastName = $(By.xpath("//input[@id='form_lastName']"));
+    private SelenideElement firstName = $(By.xpath("//*[@id=\"form_firstName\"]"));
+    private SelenideElement lastName = $(By.xpath("//*[@id=\"form_lastName\"]"));
     private SelenideElement userButton = $(By.xpath("//body/div[@id='__next']/section[1]/div[1]/div[4]/div[4]"));
 
     public void setEmailInput(String text){
